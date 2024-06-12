@@ -1,4 +1,3 @@
-/*Estilos para pantallas de al menos 400px de ancho */
 @media (max-width: 400px) {
   .cards {
     display: flex;
@@ -6,189 +5,57 @@
     align-items: center;
     width: 90%;
     margin-bottom: 1em;
+    justify-content: center;
   }
-  .map {width: 90%;
+  .map {
+    width: 90%;
     max-width: 399px;
     height: auto;
-    }
+  }
 }
-/* Estilos  pantallas de 400 a 670px */
-@media(min-width:400px) and (max-width:670px) {
-  .map {display: none;
+@media (min-width: 400px) and (max-width: 670px) {
+  .map {
+    display: none;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 1em;
+  }
 }
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  margin-bottom: 1em;
-}
-}
-
-/* Estilos para pantallas de al menos 780px y menos 1200 px de ancho */
-@media (min-width: 780px) and (max-width: 1200px) {
+@media (min-width: 670px) and (max-width: 1200px) {
   footer {
     padding: 2em;
   }
   .map {
     max-width: 750px;
   }
-}
-
-
-/* html */
-* {
-  margin: 0;
-  padding: 0;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
   }
-
-  /* cambios bootstrap navbar */
-.navbar-brand {
-  background-color: beige;
 }
-.container-fluid {
-  background-color: beige;
-}
-.carousel-inner {
-  max-width: 100%;
-  height: auto;
-}
-
-/* main intro */
-.presentacion {
-background-color: rgb(195, 171, 143);
-color: white;
-}
-  h1 {
-    font-size: 60px;
-    text-align: left;
-    padding: 40px;
-    padding-top: 80px;
-   color: white;
-  }
-
-  .presentacion p {
-    font-size: 15px;
-    display: block;
-    padding-bottom: 60px;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-right: 60px;
-    color: white;
-  }
-
-/* Cards */
-.cards {
-  display: flex;
-  padding-top: 40px;
-  justify-content: center;
-  padding-bottom: 40px;
-}
-.card {
-  justify-content: space-between;
- margin: 25px;
-}
-.card-body {
-  font-size: 10px;
-}
-.pedircita {
-  background-color: black;
-  font-size: 12px;
-  color: white;
-  border: none;
-  text-align: center;
-  padding: 8px 15px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-.pedircita:hover {
-  background-color: rgb(63, 49, 49);
-}
-
-/* Estilos para el footer */
- footer {
-    font-size: 10px;
-    text-align: center;
-    background-color: rgb(195, 171, 143);
-    height: 200px;
-    justify-content: center;
-    color: white;
- }   
- footer a {
-  font-size: 15px;
-  color: #676464;
-  justify-content: center;
- }
- footer div {
-  padding-top: 20px;
-  justify-content: center;
- }
- footer div p {
-  padding-top: 30px;
-  padding-bottom: 10px;
- }
-
- /*Estilos para section about me */
-
-.sectionaboutme {
-  background-color: black;
-  color: white;
-  padding: 60px;
-  padding-bottom: 60px;
-}
-.sectionaboutme h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.sectionaboutimg img{
-  max-width: 100%;
-  height: auto;
- display: flex;
-}
-
- /* Estilos section contact */
-.contact {
-  background-color: rgb(195, 171, 143);
-  display: block;
-  padding: 60px;
-  color: white;
-}
-.contact a{
-font-size: 3px;
-}
-.contact a:hover {
-  font-size: 5px;
-  cursor: pointer;
-}
-.studio {
-  background-color: black;
-  color: white;
-  display: block;
-  padding: 60px;
-}
-.studio h3 {
-  padding-bottom: 20px;
-}
-.studio p {
-  padding-bottom: 20px;
-}
-
-/* Estilos section portfolio */
 .sectionportfolio {
   background-color: black;
   color: white;
   padding: 60px;
 }
+
 .portfolio {
- max-width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
+
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
+
 .grid-item {
   background-color: white;
   padding: 10px;
@@ -205,46 +72,200 @@ font-size: 3px;
   width: auto;
 }
 
-/*estilos section servicios*/
-.servicios {
-  background-color: black;
-  padding: 20px;
-  padding-bottom: 50px;
-  text-align: center;
+/* Variables */
+/* Mixins */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bootstrap Navbar */
+.navbar-brand {
+  background-color: beige;
+}
+
+.container-fluid {
+  background-color: beige;
+}
+
+.carousel-inner {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main Intro */
+.presentacion {
+  background-color: rgb(195, 171, 143);
   color: white;
-   }
-.servicios ul li {
-  list-style-type: none;
+}
+.presentacion h1 {
+  font-size: 60px;
+  text-align: left;
+  padding: 40px 20px;
+}
+.presentacion p {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+/* Cards */
+.cards {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
-.servicios h2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
-.sectionserv {
-  height: 250px;
-  text-align: center;
- padding: 100px;
- font-size: 20px;
+
+.card-body {
+  font-size: 10px;
 }
-.sectionserv a {
+
+.pedircita {
   background-color: black;
-  font-size: 20px;
+  font-size: 10px;
   color: white;
   border: none;
   text-align: center;
-  padding: 8px 15px;
+  padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
 }
-.sectionserv a:hover {
-  font-style: bold;
-  text-shadow: #676464;
-  font-size: 21px;
+.pedircita:hover {
+  background-color: rgb(63, 49, 49);
 }
 
+/*div de wsp */
+.icon-wsp {
+  position: fixed;
+  right: 50px;
+  bottom: 25px;
+  transition: 2s;
+}
+.icon-wsp:hover {
+  transform: rotate(360deg);
+}
 
+/* Footer */
+footer {
+  font-size: 10px;
+  text-align: center;
+  background-color: rgb(195, 171, 143);
+  height: 200px;
+  color: white;
+}
+footer a {
+  font-size: 15px;
+  color: #676464;
+}
+footer div {
+  padding-top: 20px;
+}
+footer div p {
+  padding: 20px 0;
+}
 
+/* Section About Me */
+.sectionaboutme {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+.sectionaboutme h2 {
+  padding: 20px 0;
+}
+
+.sectionaboutimg img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+
+/* Section Contact */
+.contact {
+  background-color: rgb(195, 171, 143);
+  padding: 40px;
+  color: white;
+}
+.contact a {
+  font-size: 10px;
+}
+.contact a:hover {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Studio Section */
+.studio {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+.studio h3 {
+  padding-bottom: 20px;
+}
+.studio p {
+  padding-bottom: 20px;
+}
+
+/* Portfolio Section */
+.sectionportfolio {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+.sectionportfolio .portfolio {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sectionportfolio .portfolio .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.sectionportfolio .portfolio .grid-container .grid-item {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionportfolio .portfolio .grid-container .grid-item img {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  width: auto;
+}
+
+/* Services Section */
+.servicios {
+  background-color: black;
+  padding: 20px 40px;
+  color: white;
+  justify-content: left;
+}
+.servicios ul {
+  list-style-type: none;
+  justify-content: center;
+  text-align: left;
+}
+.servicios ul li {
+  padding: 10px 20px;
+  text-align: left;
+}
+.servicios h2 {
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
