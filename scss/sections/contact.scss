@@ -1,0 +1,31 @@
+// section contact
+.contact {
+    background-color: $color-light-brown;
+    padding: $padding-large;
+    color: $color-white;
+  
+    a {
+      font-size: $font-size-small;
+  
+      &:hover {
+        font-size: $font-size-medium;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  // studio section
+  .studio {
+    background-color: $color-black;
+    color: $color-white;
+    padding: $padding-large;
+  
+    h3 {
+      padding-bottom: $padding-medium;
+    }
+  
+    p {
+      padding-bottom: $padding-medium;
+    }
+  }
+  

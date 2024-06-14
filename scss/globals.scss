@@ -1,0 +1,52 @@
+//globales
+
+//reset
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+// navbar bootstrap 
+.navbar-brand {
+  background-color: $color-beige;
+}
+
+.container-fluid {
+  background-color: $color-beige;
+}
+
+// footer 
+footer {
+  font-size: $font-size-small;
+  text-align: center;
+  background-color: $color-light-brown;
+  height: 200px;
+  color: $color-white;
+
+  a {
+    font-size: $font-size-medium;
+    color: $color-grey;
+  }
+
+  div {
+    padding-top: $padding-medium;
+  }
+
+  div p {
+    padding: $padding-medium 0;
+  }
+}
+
+//estilos div de whatsapp fijo en las pags
+.icon-wsp { 
+  position: fixed;
+  right: 50px;
+  bottom: 25px;
+  transition: 2s;
+  &:hover{ 
+      transform: rotate(360deg);
+  }
+  }
+  
+
+

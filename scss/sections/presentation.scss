@@ -1,0 +1,55 @@
+// main intro 
+.presentacion {
+    background-color: $color-light-brown;
+    color: $color-white;
+  
+    h1 {
+      font-size: $font-size-large;
+      text-align: left;
+      padding: $padding-large $padding-medium;
+    }
+  
+    p {
+      font-size: $font-size-medium;
+      padding: $padding-small $padding-medium;
+    }
+  }
+
+  //carrousel bootstrap
+  .carousel-inner {
+    max-width: 100%;
+    height: auto;
+  }
+
+  //cards bootstrap
+  .cards {
+    @include flex-center;
+    padding: $padding-medium 0;
+  }
+  
+  .card {
+    @include flex-center;
+    margin: $padding-medium;
+  }
+  
+  .card-body {
+    font-size: $font-size-small;
+  }
+  
+  .pedircita {
+    background-color: $color-black;
+    font-size: $font-size-small;
+    color: $color-white;
+    border: none;
+    text-align: center;
+    padding: $padding-small $padding-medium;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: $color-dark-grey;
+    }
+  }
+  
+  

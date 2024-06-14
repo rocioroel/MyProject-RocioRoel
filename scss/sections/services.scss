@@ -1,0 +1,25 @@
+// services 
+.servicios {
+    background-color: $color-black;
+    padding: $padding-medium $padding-large;
+    color: $color-white;
+    justify-content: left;
+  
+    ul {
+      list-style-type: none;
+      justify-content: center;
+      text-align:left;
+  
+      li {
+        padding: $padding-small $padding-medium;
+        text-align: left;
+      }
+    }
+  
+    h2 {
+      justify-content: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+  }

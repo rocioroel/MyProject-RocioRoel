@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  background-color: beige;
+}
+
+.container-fluid {
+  background-color: beige;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  background-color: rgb(195, 171, 143);
+  height: 200px;
+  color: white;
+}
+footer a {
+  font-size: 15px;
+  color: #676464;
+}
+footer div {
+  padding-top: 20px;
+}
+footer div p {
+  padding: 20px 0;
+}
+
+.icon-wsp {
+  position: fixed;
+  right: 50px;
+  bottom: 25px;
+  transition: 2s;
+}
+.icon-wsp:hover {
+  transform: rotate(360deg);
+}
+
+.map {
+  width: 90%;
+  max-width: 399px;
+  height: auto;
+}
+
 @media (max-width: 400px) {
   .cards {
     display: flex;
@@ -72,29 +119,46 @@
   width: auto;
 }
 
-/* Variables */
-/* Mixins */
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
+.sectionaboutme {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+.sectionaboutme h2 {
+  padding: 20px 0;
 }
 
-/* Bootstrap Navbar */
-.navbar-brand {
-  background-color: beige;
-}
-
-.container-fluid {
-  background-color: beige;
-}
-
-.carousel-inner {
+.sectionaboutimg img {
   max-width: 100%;
   height: auto;
+  display: flex;
 }
 
-/* Main Intro */
+.contact {
+  background-color: rgb(195, 171, 143);
+  padding: 40px;
+  color: white;
+}
+.contact a {
+  font-size: 10px;
+}
+.contact a:hover {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.studio {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+.studio h3 {
+  padding-bottom: 20px;
+}
+.studio p {
+  padding-bottom: 20px;
+}
+
 .presentacion {
   background-color: rgb(195, 171, 143);
   color: white;
@@ -109,7 +173,11 @@
   padding: 10px 20px;
 }
 
-/* Cards */
+.carousel-inner {
+  max-width: 100%;
+  height: auto;
+}
+
 .cards {
   display: flex;
   justify-content: center;
@@ -143,110 +211,6 @@
   background-color: rgb(63, 49, 49);
 }
 
-/*div de wsp */
-.icon-wsp {
-  position: fixed;
-  right: 50px;
-  bottom: 25px;
-  transition: 2s;
-}
-.icon-wsp:hover {
-  transform: rotate(360deg);
-}
-
-/* Footer */
-footer {
-  font-size: 10px;
-  text-align: center;
-  background-color: rgb(195, 171, 143);
-  height: 200px;
-  color: white;
-}
-footer a {
-  font-size: 15px;
-  color: #676464;
-}
-footer div {
-  padding-top: 20px;
-}
-footer div p {
-  padding: 20px 0;
-}
-
-/* Section About Me */
-.sectionaboutme {
-  background-color: black;
-  color: white;
-  padding: 40px;
-}
-.sectionaboutme h2 {
-  padding: 20px 0;
-}
-
-.sectionaboutimg img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-}
-
-/* Section Contact */
-.contact {
-  background-color: rgb(195, 171, 143);
-  padding: 40px;
-  color: white;
-}
-.contact a {
-  font-size: 10px;
-}
-.contact a:hover {
-  font-size: 15px;
-  cursor: pointer;
-}
-
-/* Studio Section */
-.studio {
-  background-color: black;
-  color: white;
-  padding: 40px;
-}
-.studio h3 {
-  padding-bottom: 20px;
-}
-.studio p {
-  padding-bottom: 20px;
-}
-
-/* Portfolio Section */
-.sectionportfolio {
-  background-color: black;
-  color: white;
-  padding: 40px;
-}
-.sectionportfolio .portfolio {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.sectionportfolio .portfolio .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.sectionportfolio .portfolio .grid-container .grid-item {
-  background-color: white;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sectionportfolio .portfolio .grid-container .grid-item img {
-  width: 100%;
-  max-height: 400px;
-  height: auto;
-  width: auto;
-}
-
-/* Services Section */
 .servicios {
   background-color: black;
   padding: 20px 40px;

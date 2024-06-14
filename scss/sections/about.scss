@@ -1,0 +1,18 @@
+// section about me
+.sectionaboutme {
+    background-color: $color-black;
+    color: $color-white;
+    padding: $padding-large;
+  
+    h2 {
+      padding: $padding-medium 0;
+    }
+  }
+  
+  .sectionaboutimg img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+  }
+  
+
